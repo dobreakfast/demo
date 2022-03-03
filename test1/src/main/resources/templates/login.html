@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<!--需要在Java代码块里判断是否为空-->
+<!--<h4 th:value="${message.getError()}"></h4>-->
+<!--<h4 th:value="${message.getErrText()}"></h4>-->
+<form action="/login" method="get">
+    用户名：<input type="text" th:value="${name}" name="name"><br>
+    密 码：<input type="text" th:value="${pwd}" name="pwd"><br>
+    <input type="submit" value="登录">
+</form>
+</body>
+</html>
